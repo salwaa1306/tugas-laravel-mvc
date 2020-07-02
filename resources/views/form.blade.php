@@ -12,10 +12,10 @@
     <form action="/welcome" method="post">
       @csrf
     <p>First Name :</p>
-        <input type="text" name="nama"><br>
-    <!-- <p>Last Name :</p>
-        <input type="text"><br>
-    <p>Gender :</p>
+        <input type="text" name="namaAwal"><br>
+    <p>Last Name :</p>
+        <input type="text" name="namaAkhir"><br>
+    <!-- <p>Gender :</p>
         <input type="radio">
         <label for="">Female</label><br>
         <input type="radio">

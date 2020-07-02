@@ -15,8 +15,9 @@ class RegisterController extends Controller
     }
 
     public function welcome_post(Request $request) {
-        $nama = $request["nama"];
-        return view('welcome', ['nama' => $nama]);
+        $namaAwal = $request["namaAwal"];
+        $namaAkhir = $request["namaAkhir"];
+        return view('welcome', ['namaAwal' => $namaAwal, 'namaAkhir' => $namaAkhir]);
     }
 
 }

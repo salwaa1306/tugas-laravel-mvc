@@ -11,8 +11,9 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('index');
+    return view('adminlte.items.index');
 });
 
 Route::get('/form', 'RegisterController@form');
@@ -20,3 +21,11 @@ Route::get('/form', 'RegisterController@form');
 Route::get('/welcome', 'RegisterController@welcome');
 
 Route::post('/welcome', 'RegisterController@welcome_post');
+
+Route::get('/items', function(){
+    return view('adminlte.items.index');
+});
+
+Route::get('/data-tables', function (){
+    return view ('adminlte.items.create');
+});
